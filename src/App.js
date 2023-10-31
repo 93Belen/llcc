@@ -4,7 +4,7 @@ import "./fonts.css"
 
 function App() {
   return (
-    <main className='main'>
+    <main>
       <Header/>
     </main>
   );
