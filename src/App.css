@@ -71,16 +71,13 @@ header {
   margin: 0;
   overflow-x: hidden;
   height: 95vh;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+
 }
 #mobile-menu-list {
   display: flex;
-  width: 100%;
-  margin: 0;
   overflow-x: hidden;
-  height: 95vh;
+  height: 80vh;
+  width: 90%;
   text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
@@ -136,5 +133,8 @@ header {
   #desktop-menu-list li a{
     color: var(--blue);
     text-decoration: none;
+  }
+  #mobile-menu {
+    display: none;
   }
 }
