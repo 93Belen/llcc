@@ -8,6 +8,22 @@
   --light-gray: #F6F6F6;
   --pale-blue: #B8BFCF;
 }
+body {
+  overflow-x: hidden;
+  width: 99vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
 
 .button {
@@ -28,4 +44,45 @@
 .button:hover {
   background: var(--green);
   color: var(--white)
+}
+
+main {
+padding: 20px 15px;
+width: 95vw;
+overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#mobile-menu {
+  position: absolute;
+  top:75px;
+  left: 0;
+  background: var(--blue);
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  height: 95vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hidden{
+  display: none;
+ }
+ 
+.flex {
+   display: flex;
+ }
+
+ .no-scroll {
+  overflow: hidden;
 }
