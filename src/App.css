@@ -29,7 +29,7 @@ html {
 .button {
   display: flex;
   width: 168px;
-  height: 48px;
+  height: 40px;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,7 @@ html {
   background: var(--pale-green);
   color: var(--green);
   border: none;
+  overflow: hidden;
 }
 
 .button:hover {
@@ -47,7 +48,6 @@ html {
 }
 
 main {
-padding: 20px 15px;
 width: 95vw;
 overflow-x: hidden;
 }
@@ -59,6 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
   overflow-x: hidden;
+  padding: 20px 15px;
 }
 
 #mobile-menu {
@@ -74,15 +75,66 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
 }
+#mobile-menu-list {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  height: 95vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#mobile-menu-list li a{
+  color: var(--white);
+  text-decoration: none;
+ 
+}
 
 .hidden{
   display: none;
  }
- 
+
 .flex {
    display: flex;
  }
 
  .no-scroll {
   overflow: hidden;
+}
+#desktop-menu {
+  display: none;
+}
+
+
+@media screen and (min-width: 900px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 12px 50px;
+    width: 100vw;
+  }
+
+  #mobile-menu-icon {
+    display: none;
+  }
+
+  #desktop-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+  }
+  #desktop-menu-list {
+    display: flex;
+    justify-content: space-around;
+    width: 79%;
+  }
+
+  #desktop-menu-list li a{
+    color: var(--blue);
+    text-decoration: none;
+  }
 }
