@@ -1,12 +1,8 @@
 import ArrowLeft from "../icons/Arrow-left";
 
-export default function CustomArrowLeft({ onClick, ...rest }) {
-    const {
-        onMove,
-        carouselState: { currentSlide, deviceType }
-      } = rest;
+export default function CustomArrowLeft({ onClick }) {
     return (
-        <button onClick={() => onClick()} style={{width: '68px', height: '68px', borderRadius: '100%', background: 'pink'}}>
+        <button className='arrow' onClick={onClick} style={{left: '40vw'}}>
             <ArrowLeft/>
         </button>
     )
