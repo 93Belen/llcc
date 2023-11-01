@@ -72,8 +72,17 @@ export default function FooterDesktop() {
                         </nav>
                 </div>
            </div>
-           <div style={{borderTop: 'solid white 1px'}}>
-               
+           <div id='links-and-media-footer'>
+               <div style={{display: 'flex', gap: '78px'}}>
+               <a style={{color: 'white', textDecoration: 'none'}} className='small-body' href='#'>Privacy Policy</a>
+                    <a style={{color: 'white', textDecoration: 'none'}} className='small-body' href='#'>Terms and Conditions</a>
+               </div>
+               <div style={{display: 'flex', gap: '20px'}}>
+                        <Instagram/>
+                        <Youtube/>
+                        <Twitter/>
+                        <Facebook/>
+                    </div>
            </div>
        </footer>
     )

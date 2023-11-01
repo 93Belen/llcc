@@ -13,4 +13,10 @@
         color: var(--white);
         gap: 58px
     }
+    #links-and-media-footer {
+        border-top: solid 1px white;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0px;
+    }
 }
