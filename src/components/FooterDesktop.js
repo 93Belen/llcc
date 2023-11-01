@@ -74,8 +74,8 @@ export default function FooterDesktop() {
            </div>
            <div id='links-and-media-footer'>
                <div style={{display: 'flex', gap: '78px'}}>
-               <a style={{color: 'white', textDecoration: 'none'}} className='small-body' href='#'>Privacy Policy</a>
-                    <a style={{color: 'white', textDecoration: 'none'}} className='small-body' href='#'>Terms and Conditions</a>
+               <a style={{color: 'white', textDecoration: 'none'}} className='regular-body' href='#'>Privacy Policy</a>
+                    <a style={{color: 'white', textDecoration: 'none'}} className='regular-body' href='#'>Terms and Conditions</a>
                </div>
                <div style={{display: 'flex', gap: '20px'}}>
                         <Instagram/>
