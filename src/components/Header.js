@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import "../App.css"
+import "../header.css"
 import { useState, useEffect } from "react";
 import Home from "../icons/Home";
 import Record from "../icons/Record";
@@ -8,7 +9,7 @@ import Artist from "../icons/Artist";
 import Calendar from "../icons/Calendar";
 
 export default function Header() {
-    const [open, setOpen] = useState();
+    const [open, setOpen] = useState(false);
 
     const toggleMenu = () => {
         setOpen((state) => !state)

@@ -1,12 +1,15 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import "./fonts.css"
 
 function App() {
   return (
-    <main>
+    <div id='app'>
       <Header/>
-    </main>
+      <div style={{height: '3000px'}}></div>
+      <Footer/>
+    </div>
   );
 }
 

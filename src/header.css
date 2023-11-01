@@ -1,0 +1,154 @@
+/*  HEADER CSS */
+
+header {
+    padding: 0;
+    margin: 0;
+    background: var(--white);
+  }
+ .sticky {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   justify-content: space-between;
+   display: flex;
+   width: 100%;
+   height: fit-content;
+   align-items: center;
+   overflow-x: hidden;
+   padding: 20px 15px; 
+   background: var(--white);
+ }
+ 
+ #mobile-menu {
+   position: absolute;
+   z-index: 100;
+   top:75px;
+   left: 0;
+   background: var(--blue);
+   width: 100%;
+   margin: 0;
+   overflow-x: hidden;
+   height: 93.65vh;
+ 
+ }
+ #mobile-menu-list {
+   display: flex;
+   overflow-x: hidden;
+   height: 80vh;
+   width: 90%;
+   text-align: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   list-style: none;
+ }
+ 
+ #mobile-menu-list li a{
+   color: var(--white);
+   text-decoration: none;
+  
+ }
+ 
+ .hidden{
+   display: none;
+  }
+ 
+ .flex {
+    display: flex;
+  }
+ 
+  .no-scroll {
+   overflow: hidden;
+ }
+ #desktop-menu {
+   display: none;
+ }
+ 
+ 
+ @media screen and (min-width: 1000px) {
+   header {
+     justify-content: space-between;
+     align-items: center;
+     overflow-x: hidden;
+     padding: 12px 50px;
+     width: 100vw;
+   }
+ 
+   #desktop-menu-list li svg{
+     display: flex;
+   }
+ 
+ 
+   #mobile-menu-icon {
+     display: none;
+   }
+ 
+   #desktop-menu {
+     display: flex;
+     justify-content: space-around;
+     width: 99%;
+   }
+   #desktop-menu-list {
+     display: flex;
+     justify-content: space-around;
+     width: 79%;
+   }
+ 
+   #desktop-menu-list li{
+     display: flex;
+     align-items: center;
+     gap: 12px;
+   }
+ 
+   #desktop-menu-list li a{
+     color: var(--blue);
+     text-decoration: none;
+   }
+   #mobile-menu {
+     display: none;
+   }
+ }
+ 
+ @media screen and (min-width: 750px) and (max-width: 1000px) {
+   header {
+     justify-content: space-between;
+     align-items: center;
+     overflow-x: hidden;
+     padding: 12px 50px;
+     width: 100vw;
+   }
+ 
+   #mobile-menu-icon {
+     display: none;
+   }
+ 
+   #desktop-menu {
+     display: flex;
+     justify-content: space-around;
+     width: 99%;
+   }
+   #desktop-menu button{
+     width: 125px;
+   }
+   #desktop-menu-list {
+     display: flex;
+     justify-content: space-around;
+     width: 79%;
+   }
+   #desktop-menu-list ul li{
+     display: flex;
+     align-items: center;
+   }
+   #desktop-menu-list li svg{
+     display: none;
+   }
+ 
+   #desktop-menu-list li a{
+     color: var(--blue);
+     text-decoration: none;
+   }
+   #mobile-menu {
+     display: none;
+   }
+ }
+ 
