@@ -9,9 +9,13 @@ import CustomArrowRight from "./CustomArrowRight";
 export default function CarouselElement() {
 
     const responsive = {
+        big: {
+            breakpoint: { max: 8000, min: 1600 },
+            items: 3
+          },
         desktop: {
-          breakpoint: { max: 8000, min: 1200 },
-          items: 3
+          breakpoint: { max: 1600, min: 1200 },
+          items: 2
         },
         tablet: {
         breakpoint: {max: 1200, min: 700},
@@ -37,7 +41,16 @@ export default function CarouselElement() {
                 customLeftArrow={<CustomArrowLeft/>}
                 renderButtonGroupOutside
                 responsive={responsive}>
-                    <div className='card'>Item 1</div>
+                    <div className='card'>
+                    <h4>Trapsoul</h4>
+                        <div className='card-img'>
+                            <img src='card.jpg' width='100%' />
+                        </div>
+                        <div>
+                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
+                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        </div>
+                    </div>
                     <div className='card'>Item 2</div>
                     <div className='card'>Item 3</div>
                     <div className='card'>Item 4</div>
