@@ -51,22 +51,22 @@ main {
 width: 95vw;
 overflow-x: hidden;
 }
-
-header {
+.sticky {
   position: fixed;
+  top: 0;
+  z-index: 10;
+  justify-content: space-between;
   display: flex;
   width: 100%;
   height: fit-content;
-  justify-content: space-between;
   align-items: center;
   overflow-x: hidden;
-  padding: 20px 15px;
-  top: 0;
-  z-index: 100;
+  padding: 20px 15px; 
 }
 
 #mobile-menu {
   position: absolute;
+  z-index: 100;
   top:75px;
   left: 0;
   background: var(--blue);

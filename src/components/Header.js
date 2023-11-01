@@ -29,6 +29,7 @@ export default function Header() {
 
     return (
         <header>
+            <div className='sticky'>
             <div style={{width: '25%', maxWidth: '106px'}}>
                 <Logo/>
             </div>
@@ -40,17 +41,6 @@ export default function Header() {
                     <path d="M3 16H40L38 21H0L3 16Z" fill="#001D5D" />
                 </svg>
             </div>
-            <nav style={{ color: 'white' }} className={`${open ? 'f' : 'hidden'} nav-text`} id='mobile-menu'>
-                <ul id='mobile-menu-list'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Records</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Artist</a></li>
-                    <li><a href="#">Concerts</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <div></div>
-                </ul>
-            </nav>
             {/* Desktop menu */}
             <nav id='desktop-menu' className='nav-text'>
                 <ul id='desktop-menu-list'>
@@ -61,6 +51,18 @@ export default function Header() {
                     <li><a href="#concerts"><Calendar /> Concerts</a></li>
                 </ul>
                 <button style={{alignSelf: 'center', textAlign: 'center'}} className='button button-text'>Sign Up</button>
+            </nav>
+            </div>
+            <nav style={{ color: 'white' }} className={`${open ? 'f' : 'hidden'} nav-text`} id='mobile-menu'>
+                <ul id='mobile-menu-list'>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Records</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Artist</a></li>
+                    <li><a href="#">Concerts</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <div></div>
+                </ul>
             </nav>
         </header>
     )
