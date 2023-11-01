@@ -121,10 +121,60 @@ min-height: 100%;
    margin: 0;
  }
 
+ #brent-img {
+  width: 100%;
+  height: 400px;
+  background-image: url(../public/brent.tiff);
+  background-size: cover;
+  background-position: center;
+}
+
  #brent-content {
   padding: 0 23px;
   color: var(--gray);
   display: flex;
   flex-direction: column;
   gap: 6p;
+}
+
+#desktop-brent-button {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 800px){
+  
+#brent-div {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 128px 50px;
+  height: fit-content;
+  min-height: 455px;
+}
+#brent-img {
+  width: 50vw;
+  display: flex;
+  align-items: stretch;
+  background-image: url(../public/brent.tiff);
+  background-size: cover;
+  background-position: center;
+}
+#brent-content {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+#mobile-brent-button {
+  display: none;
+}
+#desktop-brent-button {
+  display: block;
+}
+#brent-div button {
+  margin: 0px;
+}
+
 }
