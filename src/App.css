@@ -66,6 +66,10 @@ min-height: 100%;
   display: flex;
   flex-direction: column;
 }
+
+
+
+
 #hero h1 {
   margin-bottom: 20px;
 }
@@ -91,7 +95,20 @@ min-height: 100%;
   #hero {
     padding: 170px 150px;
     gap: 24px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: zoomInOut 30s infinite alternate cubic-bezier(0.23, 1, 0.32, 1);
   }
+  
+  @keyframes zoomInOut {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 130%;
+    }
+  }
+  
   #subtitle {
     width: 567px;
   }
@@ -143,7 +160,7 @@ min-height: 100%;
 
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
   
 #brent-div {
   display: flex;
@@ -165,7 +182,6 @@ min-height: 100%;
   width: 60vw;
   display: flex;
   justify-content: space-between;
-  gap: 32px;
 }
 #mobile-brent-button {
   display: none;

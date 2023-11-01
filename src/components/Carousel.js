@@ -27,6 +27,12 @@ export default function CarouselElement() {
         }
       };
 
+
+      const onBeforeChange = (currentSlide) => {
+        console.log(currentSlide)
+        document.getElementById(`card-${currentSlide}`).style.opacity = '1'
+      };
+
     return (
        <section id='carousel'>
            <h3>New Releases</h3>
@@ -40,8 +46,10 @@ export default function CarouselElement() {
                 customRightArrow={<CustomArrowRight/>}
                 customLeftArrow={<CustomArrowLeft/>}
                 renderButtonGroupOutside
+                beforeChange={onBeforeChange} 
+                infinite
                 responsive={responsive}>
-                    <div className='card'>
+                    <div id='card-1' className='card'>
                     <h4>Trapsoul</h4>
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
@@ -51,7 +59,7 @@ export default function CarouselElement() {
                             <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div  id='card-2' className='card'>
                     <h4>Trapsoul</h4>
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
@@ -61,7 +69,7 @@ export default function CarouselElement() {
                             <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div id='card-3' className='card'>
                     <h4>Trapsoul</h4>
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
@@ -71,7 +79,7 @@ export default function CarouselElement() {
                             <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div id='card-4' className='card'>
                     <h4>Trapsoul</h4>
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
@@ -81,7 +89,7 @@ export default function CarouselElement() {
                             <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div id='card-5' className='card'>
                     <h4>Trapsoul</h4>
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
