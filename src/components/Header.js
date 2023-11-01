@@ -44,11 +44,11 @@ export default function Header() {
             {/* Desktop menu */}
             <nav id='desktop-menu' className='nav-text'>
                 <ul id='desktop-menu-list'>
-                    <li><a href="#home"><Home /> Home</a></li>
-                    <li><a href="#records"><Record /> Records</a></li>
-                    <li><a href="#music"><Music /> Music</a></li>
-                    <li><a href="#artist"><Artist /> Artist</a></li>
-                    <li><a href="#concerts"><Calendar /> Concerts</a></li>
+                    <li><Home /><a href="#home"> Home</a></li>
+                    <li><Record /><a href="#records"> Records</a></li>
+                    <li><Music /><a href="#music"> Music</a></li>
+                    <li><Artist /> <a href="#artist">Artist</a></li>
+                    <li><Calendar /><a href="#concerts"> Concerts</a></li>
                 </ul>
                 <button style={{alignSelf: 'center', textAlign: 'center'}} className='button button-text'>Sign Up</button>
             </nav>
