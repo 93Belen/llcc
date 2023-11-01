@@ -103,3 +103,28 @@ min-height: 100%;
   }
 
 }
+
+
+#brent-div {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 35px 0;
+}
+
+#brent-div button{
+  margin: 0 23px;
+}
+
+ #brent-div h3 {
+   color: var(--blue);
+   margin: 0;
+ }
+
+ #brent-content {
+  padding: 0 23px;
+  color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 6p;
+}
