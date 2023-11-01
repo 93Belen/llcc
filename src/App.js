@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import FooterDesktop from './components/FooterDesktop';
+import Form from './components/Form';
 import Header from './components/Header';
 import "./fonts.css"
 import Play from './icons/Play.js'
@@ -30,6 +31,7 @@ function App() {
           </div>
           <button id='mobile-brent-button' className='button regular-body'>Lear More</button>
         </section>
+        <Form/>
       </main>
       <FooterDesktop/>
       <Footer/>
