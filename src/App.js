@@ -1,4 +1,6 @@
 import './App.css';
+import CarouselElement from './components/Carousel';
+import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import FooterDesktop from './components/FooterDesktop';
 import Form from './components/Form';
@@ -31,6 +33,7 @@ function App() {
           </div>
           <button id='mobile-brent-button' className='button regular-body'>Lear More</button>
         </section>
+        <CarouselElement/>
         <Form/>
       </main>
       <FooterDesktop/>
