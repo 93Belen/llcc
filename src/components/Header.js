@@ -53,7 +53,7 @@ export default function Header() {
                 <button style={{alignSelf: 'center', textAlign: 'center'}} className='button button-text'>Sign Up</button>
             </nav>
             </div>
-            <nav style={{ color: 'white' }} className={`${open ? 'f' : 'hidden'} nav-text`} id='mobile-menu'>
+            <nav style={{ color: 'white' }} className={`${open ? '' : 'hidden'} nav-text`} id='mobile-menu'>
                 <ul id='mobile-menu-list'>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Records</a></li>
