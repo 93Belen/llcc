@@ -54,3 +54,52 @@ overflow-x: hidden;
 height: fit-content;
 min-height: 100%;
 }
+
+#hero {
+  height: fit-content;
+  background-image: url(../public/hero.jpg);
+  background-size: cover;
+  background-position: 25%;
+  width: 100%;
+  padding: 69px 20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+#hero h1 {
+  margin-bottom: 20px;
+}
+
+#subtitle {
+  max-width: 75%;
+}
+
+#play-button {
+  border-radius: 100%;
+  border-style: none;
+  background: var(--white);
+  width: 60px;
+  height: 60px;
+}
+#watch-div {
+  display: flex;
+  gap: 24px;
+  margin-top: 54px
+}
+
+@media screen and (min-width: 750px){
+  #hero {
+    padding: 170px 150px;
+    gap: 24px;
+  }
+  #subtitle {
+    width: 567px;
+  }
+  #hero h1 {
+    margin-bottom: 0px;
+  }
+  #watch-div {
+    margin-top: 0px
+  }
+
+}
