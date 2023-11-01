@@ -67,4 +67,8 @@
     .arrow:hover{
         background: var(--blue);
     }
+    .arrow:hover path {
+        fill: var(--white);
+      }
+   
 }
