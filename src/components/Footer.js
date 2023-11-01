@@ -20,7 +20,7 @@ export default function Footer() {
     }
 
     return (
-       <footer>
+       <footer id="footer">
            <div style={{width: '100%', justifyItems: 'end', justifyContent: 'end', display: 'flex'}}><div style={{width: '25%', maxWidth: '106px'}}><LogoWhite/></div></div>
            <div id="accordion">
                 <div className='accordion-item'>

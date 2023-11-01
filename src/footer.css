@@ -1,4 +1,4 @@
-footer {
+#footer {
     width: 100%;
     height: fit-content;
     background: var(--blue);
@@ -31,4 +31,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+
+@media screen and (min-width: 1000px){
+    #footer{
+        display: none;
+    }
 }

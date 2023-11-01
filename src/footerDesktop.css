@@ -1,0 +1,16 @@
+#footer-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1000px){
+    #footer-desktop{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        background: var(--blue);
+        padding: 70px 50px;
+        color: var(--white);
+        gap: 58px
+    }
+}
