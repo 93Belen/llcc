@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react"
 import "../App.css"
 import "../styles/form.css"
 
 export default function Form() {
+    const [textFields, setTextFields] = useState({
+        name: '',
+        lastName: ''
+    });
+
+    useEffect(()=> {
+        if (/\d/.test(textFields.name)) {
+            document.getElementById('name-field').style.borderColor = 'red'
+        }
+    
+        if (/\d/.test(textFields.lastName)) {
+            document.getElementById('last-name-field').style.borderColor = 'red'
+        }
+        if(!/\d/.test(textFields.name)) {
+            document.getElementById('name-field').style.borderColor = 'inherit'
+        }
+        if(!/\d/.test(textFields.lastName)) {
+            document.getElementById('last-name-field').style.borderColor = 'inherit'
+        }
+    }, [textFields])
+
 
     return (
        <section id='form-section-wraper'>
@@ -13,11 +35,11 @@ export default function Form() {
                 <form id='form'>
                     <div>
                         <label className='field-label'>First Name</label>
-                        <input className='field-label field' required minLength={2} maxLength={50} type='text' placeholder='First Name'/>
+                        <input id='name-field' onChange={(e) => setTextFields({ ...textFields, name: e.target.value })} className='field-label field' required minLength={2} maxLength={50} type='text' placeholder='First Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Last Name</label>
-                        <input className='field-label field' required type='text' minLength={2} maxLength={50} placeholder='Last Name'/>
+                        <input id='last-name-field' onChange={(e) => setTextFields({ ...textFields, lastName: e.target.value })} className='field-label field' required type='text' minLength={2} maxLength={50} placeholder='Last Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Email Address</label>
