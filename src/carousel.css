@@ -81,3 +81,39 @@
     }
    
 }
+@media screen and (min-width: 1300px) {
+    .arrow {
+        top: 420px
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .arrow {
+        top: 435px
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .arrow {
+        top: 370px
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .arrow {
+        top: 380px
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .arrow {
+        top: 410px
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .arrow {
+        top: 435px
+    }
+}
+
