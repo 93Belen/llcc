@@ -50,6 +50,16 @@
     display: none;
 }
 
+#select-field {
+    height: 56px;
+    box-shadow: none;
+    appearance: none;
+    background-image: url(../public/select.png);
+    background-position: 94%;
+    background-repeat: no-repeat;
+}
+
+  
 
 
 @media screen and (min-width: 750px){

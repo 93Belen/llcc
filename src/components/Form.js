@@ -24,8 +24,13 @@ export default function Form() {
                         <input className='field-label field' type='email' placeholder='Email Address'/>
                     </div>
                     <div>
-                        <label className='field-label'>Reason for Contacting</label>
-                        <input className='field-label field' type='text' placeholder='Select One'/>
+                    <label className='field-label'>Reason for Contacting</label>
+                    <select id='select-field' className='field-label field'>
+                        <option value='' disabled selected>Select One</option>
+                        <option value='option1'>Option 1</option>
+                        <option value='option2'>Option 2</option>
+                        <option value='option3'>Option 3</option>
+                    </select>
                     </div>
                     <div id='textarea'>
                         <label className='field-label'>Message (Optional)</label>
