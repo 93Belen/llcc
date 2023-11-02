@@ -59,9 +59,9 @@ export default function CarouselElement() {
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
                         </div>
-                        <div>
-                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
-                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        <div style={{paddingTop: '0px', marginTop: '0px'}}>
+                            <p style={{color: 'var(--green)', paddingTop: '0px', marginTop: '0px'}} className='all-caps'>Bryson Tyller</p>
+                            <p style={{paddingTop: '0px', marginTop: '0px'}} className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
                     <div  id='card-1' className='card'>
@@ -69,9 +69,9 @@ export default function CarouselElement() {
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
                         </div>
-                        <div>
-                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
-                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        <div style={{paddingTop: '0px', marginTop: '0px'}}>
+                            <p style={{color: 'var(--green)', paddingTop: '0px', marginTop: '0px'}} className='all-caps'>Bryson Tyller</p>
+                            <p style={{paddingTop: '0px', marginTop: '0px'}} className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
                     <div id='card-2' className='card'>
@@ -79,9 +79,9 @@ export default function CarouselElement() {
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
                         </div>
-                        <div>
-                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
-                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        <div style={{paddingTop: '0px', marginTop: '0px'}}>
+                            <p style={{color: 'var(--green)', paddingTop: '0px', marginTop: '0px'}} className='all-caps'>Bryson Tyller</p>
+                            <p style={{paddingTop: '0px', marginTop: '0px'}} className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
                     <div id='card-3' className='card'>
@@ -89,9 +89,9 @@ export default function CarouselElement() {
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
                         </div>
-                        <div>
-                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
-                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        <div style={{paddingTop: '0px', marginTop: '0px'}}>
+                            <p style={{color: 'var(--green)', paddingTop: '0px', marginTop: '0px'}} className='all-caps'>Bryson Tyller</p>
+                            <p style={{paddingTop: '0px', marginTop: '0px'}} className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
                     <div id='card-4' className='card'>
@@ -99,9 +99,9 @@ export default function CarouselElement() {
                         <div className='card-img'>
                             <img src='card.jpg' width='100%' />
                         </div>
-                        <div>
-                            <p style={{color: 'var(--green)'}} className='all-caps'>Bryson Tyller</p>
-                            <p className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
+                        <div style={{paddingTop: '0px', marginTop: '0px'}}>
+                            <p style={{color: 'var(--green)', paddingTop: '0px', marginTop: '0px'}} className='all-caps'>Bryson Tyller</p>
+                            <p style={{paddingTop: '0px', marginTop: '0px'}} className='small-body'>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1. </p>
                         </div>
                     </div>
                 </Carousel>
