@@ -13,19 +13,19 @@ export default function Form() {
                 <form id='form'>
                     <div>
                         <label className='field-label'>First Name</label>
-                        <input className='field-label field' type='text' placeholder='First Name'/>
+                        <input className='field-label field' required maxLength={50} type='text' placeholder='First Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Last Name</label>
-                        <input className='field-label field' type='text' placeholder='Last Name'/>
+                        <input className='field-label field' required type='text' maxLength={50} placeholder='Last Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Email Address</label>
-                        <input className='field-label field' type='email' placeholder='Email Address'/>
+                        <input className='field-label field' required type='email' maxLength={50} placeholder='Email Address'/>
                     </div>
                     <div>
                     <label className='field-label'>Reason for Contacting</label>
-                    <select id='select-field' className='field-label field'>
+                    <select id='select-field' required className='field-label field'>
                         <option value='' disabled selected>Select One</option>
                         <option value='option1'>Option 1</option>
                         <option value='option2'>Option 2</option>
@@ -36,7 +36,7 @@ export default function Form() {
                         <label className='field-label'>Message (Optional)</label>
                         <textarea cols={10} rows={14} style={{width: '99%'}} className='field-label field' placeholder='Write a brief message'/>
                     </div>
-                    <button className='button button-text' style={{marginTop: '12px'}}>Learn More</button>
+                    <button type="submit" className='button button-text' style={{marginTop: '12px'}}>Learn More</button>
                 </form>
             </div>
             <div id='img-form'>
