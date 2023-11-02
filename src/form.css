@@ -75,6 +75,7 @@
     }
     #form-div {
         width: 70vw;
+        padding-right: 5px;
     }
     .field {
         width: 90%;
@@ -82,5 +83,15 @@
     #form-section-wraper{
         width: 100%;
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #form-div {
+        width: 60vw;
+        padding-right: 132px;
+    }
+    #img-form {
+        width: 40vw;
     }
 }
