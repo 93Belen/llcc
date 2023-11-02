@@ -169,6 +169,7 @@ min-height: 100%;
   padding: 128px 50px;
   height: fit-content;
   min-height: 455px;
+  justify-content: center;
 }
 #brent-img {
   width: 50vw;
@@ -177,11 +178,13 @@ min-height: 100%;
   background-image: url(../public/brent.tiff);
   background-size: cover;
   background-position: center;
+  max-width: 800px
 }
 #brent-content {
   width: 60vw;
   display: flex;
   justify-content: space-between;
+  max-width: 800px
 }
 #mobile-brent-button {
   display: none;
