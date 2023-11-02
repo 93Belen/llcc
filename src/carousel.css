@@ -64,7 +64,8 @@
         background: #B8BFCF;
         position: absolute;
         border: none;
-        top: 365px
+        top: 365px;
+        transition-duration: 1s;
     }
     .arrow:hover{
         background: var(--blue);
