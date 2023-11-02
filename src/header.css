@@ -100,7 +100,10 @@ header {
      padding: 12px 50px;
      width: 100vw;
    }
- 
+
+  .sticky {
+    max-height: 65px;
+  }
    #desktop-menu-list li svg{
      display: flex;
    }

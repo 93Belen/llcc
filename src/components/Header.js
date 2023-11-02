@@ -54,7 +54,7 @@ export default function Header() {
     return (
         <header>
             <div className='sticky'>
-            <div style={{width: '25%', maxWidth: '106px'}}>
+            <div style={{width: '25%', maxWidth: '106px', paddingTop: '12px'}}>
                 <Logo/>
             </div>
             {/* Mobile menu */}
