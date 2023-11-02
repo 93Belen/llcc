@@ -7,6 +7,7 @@ export default function Form() {
         name: '',
         lastName: ''
     });
+    const [error, setError] = useState('');
 
     useEffect(()=> {
         if (/\d/.test(textFields.name)) {
@@ -22,6 +23,12 @@ export default function Form() {
         if(!/\d/.test(textFields.lastName)) {
             document.getElementById('last-name-field').style.borderColor = 'inherit'
         }
+        if(/\d/.test(textFields.name) || /\d/.test(textFields.lastName)){
+            setError('Please, do not use numbers for your name or last name')
+        }
+        if(!/\d/.test(textFields.name) && !/\d/.test(textFields.lastName)){
+            setError('')
+        }
     }, [textFields])
 
 
@@ -32,6 +39,7 @@ export default function Form() {
             <p className='large-body'>New albums every single month,
                 check out the newest & best from Snyder Recording artist,
                 now available on Apple Music & Spotify.</p>
+                <p style={{margin: '0'}} className='small-body'>{error}</p>
                 <form id='form'>
                     <div>
                         <label className='field-label'>First Name</label>
