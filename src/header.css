@@ -13,7 +13,7 @@ header {
    justify-content: space-between;
    display: flex;
    width: 100%;
-   height: fit-content;
+   height: 65px;
    align-items: center;
    overflow-x: hidden;
    padding: 20px 15px; 
@@ -23,7 +23,7 @@ header {
  #mobile-menu {
    position: fixed;
    z-index: 100;
-   top: 80px;
+   top: 65px;
    left: 0;
    background: var(--blue);
    width: 100%;

@@ -8,6 +8,7 @@
     flex-direction: column;
     color: var(--gray);
     gap: 10px;
+    padding-bottom: 61px;
 }
 
 #form-div h3 {
