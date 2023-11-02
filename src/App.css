@@ -97,7 +97,7 @@ min-height: 100%;
     gap: 24px;
     background-position: bottom;
     background-repeat: no-repeat;
-    animation: zoomInOut 30s infinite alternate cubic-bezier(0.23, 1, 0.32, 1);
+    animation: zoomInOut 25s infinite alternate cubic-bezier(0.23, 1, 0.32, 1);
   }
   
   @keyframes zoomInOut {

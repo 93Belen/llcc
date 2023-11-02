@@ -12,7 +12,7 @@ function App() {
   return (
     <div id='app'>
       <Header/>
-      <main style={{height: 'fit-content'}}>
+      <main id='main' style={{height: 'fit-content'}}>
         <section id='hero'>
           <h1>A.M. Paradox</h1>
           <div id='subtitle'><p className='regular-body'>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is

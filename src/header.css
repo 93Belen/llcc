@@ -21,17 +21,47 @@ header {
  }
  
  #mobile-menu {
-   position: absolute;
+   position: fixed;
    z-index: 100;
-   top:75px;
+   top: 80px;
    left: 0;
    background: var(--blue);
    width: 100%;
    margin: 0;
    overflow-x: hidden;
    height: 93.65vh;
- 
+   animation: slideDown  0.5s ease forwards;
  }
+
+
+ @keyframes slideDown {
+  from {
+    transform: scaleY(0.85);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+ /* When open */
+.appear {
+  display: block;
+}
+
+.desappear {
+  display: none;
+}
+
+
  #mobile-menu-list {
    display: flex;
    overflow-x: hidden;
@@ -41,6 +71,7 @@ header {
    flex-direction: column;
    justify-content: space-evenly;
    list-style: none;
+   transition-duration: 1s;
  }
  
  #mobile-menu-list li a{
@@ -49,15 +80,11 @@ header {
   
  }
  
- .hidden{
-   display: none;
-  }
- 
  .flex {
     display: flex;
   }
  
-  .no-scroll {
+  .disable-scroll {
    overflow: hidden;
  }
  #desktop-menu {

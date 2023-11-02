@@ -16,15 +16,38 @@ export default function Header() {
     }
 
     useEffect(() => {
+        const line2 = document.getElementById('path-2')
+
         if (open) {
           document.body.classList.add('disable-scroll');
+          document.getElementById('app').classList.add('disable-scroll');
+          document.getElementById('main').classList.add('disable-scroll');
+          
+
+
+          // Animation for burguer menu
+
+        line2.style.fill = 'white'
+        line2.style.transitionDuration = '1s'
+
         } else {
           document.body.classList.remove('disable-scroll');
+          document.getElementById('app').classList.remove('disable-scroll');
+          document.getElementById('main').classList.remove('disable-scroll');
+
+          // Animation burguer menu
+
+
+          line2.style.fill = '#001D5D'
+
         }
     
         return () => {
           // Clean up by removing the class when the component unmounts
           document.body.classList.remove('disable-scroll');
+          document.getElementById('app').classList.remove('disable-scroll');
+          document.getElementById('main').classList.remove('disable-scroll');
+          line2.style.fill = '#001D5D'
         };
       }, [open]);
 
@@ -36,10 +59,10 @@ export default function Header() {
             </div>
             {/* Mobile menu */}
             <div id='mobile-menu-icon' onClick={toggleMenu} role="button" tabIndex="0" style={{ width: '15%', maxWidth: '80px' }}>
-                <svg width="100%" height="auto" viewBox="0 0 44 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 0H44L42 5H4L7 0Z" fill="#001D5D" />
-                    <path d="M5 8H42L40 13H2L5 8Z" fill="#001D5D" />
-                    <path d="M3 16H40L38 21H0L3 16Z" fill="#001D5D" />
+                <svg id='svg' width="100%" height="auto" viewBox="0 0 44 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='path-1' d="M7 0H44L42 5H4L7 0Z" fill="#001D5D" />
+                    <path id='path-2' d="M5 8H42L40 13H2L5 8Z" fill="#001D5D" />
+                    <path id='path-3' d="M3 16H40L38 21H0L3 16Z" fill="#001D5D" />
                 </svg>
             </div>
             {/* Desktop menu */}
@@ -54,7 +77,7 @@ export default function Header() {
                 <button style={{alignSelf: 'center', textAlign: 'center'}} className='button button-text'>Sign Up</button>
             </nav>
             </div>
-            <nav style={{ color: 'white' }} className={`${open ? '' : 'hidden'} nav-text`} id='mobile-menu'>
+            <nav style={{ color: 'white' }} className={`${open ? 'appear' : 'desappear'} nav-text`} id='mobile-menu'>
                 <ul id='mobile-menu-list'>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Records</a></li>
