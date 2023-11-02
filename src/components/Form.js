@@ -13,11 +13,11 @@ export default function Form() {
                 <form id='form'>
                     <div>
                         <label className='field-label'>First Name</label>
-                        <input className='field-label field' required maxLength={50} type='text' placeholder='First Name'/>
+                        <input className='field-label field' required minLength={2} maxLength={50} type='text' placeholder='First Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Last Name</label>
-                        <input className='field-label field' required type='text' maxLength={50} placeholder='Last Name'/>
+                        <input className='field-label field' required type='text' minLength={2} maxLength={50} placeholder='Last Name'/>
                     </div>
                     <div>
                         <label className='field-label'>Email Address</label>
