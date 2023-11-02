@@ -27,6 +27,7 @@
     border-radius: 2px;
     border: 2px solid var(--blue);
     color: var(--blue);
+    outline: none;
 }
 .field:hover {
     border-radius: 2px;
