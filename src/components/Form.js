@@ -31,6 +31,7 @@ export default function Form() {
                         <label className='field-label'>Message (Optional)</label>
                         <textarea cols={10} rows={14} style={{width: '99%'}} className='field-label field' placeholder='Write a brief message'/>
                     </div>
+                    <button className='button button-text' style={{marginTop: '12px'}}>Learn More</button>
                 </form>
             </div>
             <div id='img-form'>
