@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import "../App.css"
-import "../header.css"
+import "../styles/header.css"
 import { useState, useEffect } from "react";
 import Home from "../icons/Home";
 import Record from "../icons/Record";

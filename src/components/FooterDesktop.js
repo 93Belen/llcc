@@ -1,6 +1,5 @@
 import "../App.css"
-import "../footerDesktop.css"
-import ArrowDown from "../icons/Arrow-down"
+import "../styles/footerDesktop.css"
 import Facebook from "../icons/Facebook"
 import Instagram from "../icons/Instagram"
 import Twitter from "../icons/Twitter"

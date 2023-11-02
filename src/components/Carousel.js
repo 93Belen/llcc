@@ -1,10 +1,10 @@
 import "../App.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import '../carousel.css'
+import '../styles/carousel.css'
 import CustomArrowLeft from "./CustomArrowLeft";
 import CustomArrowRight from "./CustomArrowRight";
-import { useEffect } from "react";
+
 
 
 export default function CarouselElement() {

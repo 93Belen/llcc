@@ -1,5 +1,5 @@
 import "../App.css"
-import "../footer.css"
+import "../styles/footer.css"
 import ArrowDown from "../icons/Arrow-down"
 import Facebook from "../icons/Facebook"
 import Instagram from "../icons/Instagram"
