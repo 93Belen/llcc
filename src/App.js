@@ -1,10 +1,10 @@
 import './App.css';
 import CarouselElement from './components/Carousel';
-import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import FooterDesktop from './components/FooterDesktop';
 import Form from './components/Form';
 import Header from './components/Header';
+import Map from './components/Map';
 import "./fonts.css"
 import Play from './icons/Play.js'
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div id='app'>
       <Header/>
-      <main id='main' style={{height: 'fit-content'}}>
+      <main id='main' style={{height: 'fit-content', display: 'flex', flexDirection: 'column', gap: '0'}}>
         <section id='hero'>
           <h1>A.M. Paradox</h1>
           <div id='subtitle'><p className='regular-body'>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is
@@ -34,6 +34,7 @@ function App() {
           <button id='mobile-brent-button' className='button regular-body'>Lear More</button>
         </section>
         <CarouselElement/>
+        <Map/>
         <Form/>
       </main>
       <FooterDesktop/>
