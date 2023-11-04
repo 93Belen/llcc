@@ -26,6 +26,9 @@ html {
   box-sizing: border-box;
 }
 
+*:not(#map) {
+  overflow: visible;
+}
 
 .button {
   display: flex;
