@@ -179,7 +179,7 @@ min-height: 100%;
   width: 50vw;
   display: flex;
   align-items: stretch;
-  background-image: url(../public/brent.tiff);
+  background-image: url(../public/brent.jpg);
   background-size: cover;
   background-position: center;
   max-width: 800px
