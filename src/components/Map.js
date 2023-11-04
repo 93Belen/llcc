@@ -12,7 +12,7 @@ export default function MapElement() {
 
     return (
         <APIProvider apiKey={process.env.REACT_APP_API_KEY}>
-            <div style={{width: '100%', height: '544px'}}>
+            <div style={{width: '99%', height: '544px', marginLeft: '5px'}}>
                 <Map mapId={process.env.REACT_APP_MAP_ID} zoom={15} center={position}>
                     <AdvancedMarker position={position}>
                         <Pin background={"#42A418"} borderColor={"#42A418"} glyphColor={"#D9F0D0"} />
