@@ -11,12 +11,17 @@
         background: var(--blue);
         padding: 70px 60px 10px 50px;
         color: var(--white);
-        gap: 58px
+        gap: 58px;
+        list-style: none;
     }
     #links-and-media-footer {
         border-top: solid 1px white;
         display: flex;
         justify-content: space-between;
         padding: 24px 0px;
+    }
+
+    #footer-desktop ul {
+        list-style: none;
     }
 }
