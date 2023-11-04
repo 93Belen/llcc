@@ -67,7 +67,7 @@ export default function Header() {
             </div>
             {/* Desktop menu */}
             <nav id='desktop-menu' className='nav-text'>
-                <ul id='desktop-menu-list'>
+                <ul style={{listStyle: 'none'}} id='desktop-menu-list'>
                     <li><Home /><a href="#home"> Home</a></li>
                     <li><Record /><a href="#records"> Records</a></li>
                     <li><Music /><a href="#music"> Music</a></li>
@@ -78,7 +78,7 @@ export default function Header() {
             </nav>
             </div>
             <nav style={{ color: 'white' }} className={`${open ? 'appear' : 'desappear'} nav-text`} id='mobile-menu'>
-                <ul id='mobile-menu-list'>
+                <ul style={{listStyle: 'none'}} id='mobile-menu-list'>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Records</a></li>
                     <li><a href="#">Music</a></li>
