@@ -59,7 +59,7 @@ export default function Header() {
             </div>
             {/* Mobile menu */}
             <div id='mobile-menu-icon' onClick={toggleMenu} role="button" tabIndex="0" style={{ width: '15%', maxWidth: '80px' }}>
-                <svg id='svg' width="100%" height="auto" viewBox="0 0 44 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id='svg' width="100%" viewBox="0 0 44 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id='path-1' d="M7 0H44L42 5H4L7 0Z" fill="#001D5D" />
                     <path id='path-2' d="M5 8H42L40 13H2L5 8Z" fill="#001D5D" />
                     <path id='path-3' d="M3 16H40L38 21H0L3 16Z" fill="#001D5D" />
