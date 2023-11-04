@@ -14,9 +14,12 @@ export default function Footer() {
         if(state === 'none'){
             document.getElementById(idElement).style.display = 'block'    
         }
-        else {
+        else if (state === 'block') {
             document.getElementById(idElement).style.display = 'none'
-        }     
+        }    
+        else {
+            document.getElementById(idElement).style.display = 'block'    
+        }
     }
 
     return (
