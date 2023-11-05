@@ -17,6 +17,9 @@ export default function Header() {
 
     useEffect(() => {
         const line2 = document.getElementById('path-2')
+        const line1 = document.getElementById('path-1')
+        const line3 = document.getElementById('path-3')
+
 
         if (open) {
           document.body.classList.add('disable-scroll');
@@ -29,6 +32,10 @@ export default function Header() {
 
         line2.style.fill = 'white'
         line2.style.transitionDuration = '1s'
+        line1.style.transitionDuration = '1s'
+        line3.style.transitionDuration = '1s'
+        line1.style.transform = 'translateY(50%)'
+        line3.style.transform = 'translateY(-50%)'
 
         } else {
           document.body.classList.remove('disable-scroll');
@@ -39,6 +46,8 @@ export default function Header() {
 
 
           line2.style.fill = '#001D5D'
+          line1.style.transform = 'translateY(0%)'
+          line3.style.transform = 'translateY(0%)'
 
         }
     
