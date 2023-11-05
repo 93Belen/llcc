@@ -88,7 +88,13 @@ min-height: 100%;
   background: var(--white);
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
+#play-button:hover{
+  background: var(--light-gray);
+  transition-duration: 1s;
+}
+
 #watch-div {
   display: flex;
   gap: 24px;
