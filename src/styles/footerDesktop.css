@@ -23,5 +23,6 @@
 
     #footer-desktop ul {
         list-style: none;
+        cursor: pointer;
     }
 }
