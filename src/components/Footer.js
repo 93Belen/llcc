@@ -28,7 +28,7 @@ export default function Footer() {
            <div id="accordion">
                 <div className='accordion-item'>
                     <div onClick={() => {toggleOpen('explore-content')}} className='accordion-header'><p className='all-caps'>Explore</p><ArrowDown/></div>
-                    <nav id='explore-content' className="accordion-content nav-text">
+                    <nav id='explore-content' className="accordion-content small-body">
                         <ul>
                             <li><a href='#'></a>About Us</li>
                             <li><a href='#'></a>Our Story</li>
@@ -40,7 +40,7 @@ export default function Footer() {
                 </div>
                 <div className='accordion-item'>
                     <div onClick={() => {toggleOpen('music-content')}} className='accordion-header'><p className='all-caps'>Music</p><ArrowDown/></div>
-                        <nav id='music-content' className="accordion-content nav-text">
+                        <nav id='music-content' className="accordion-content small-body">
                             <ul>
                                 <li><a href='#'></a>Missing Out</li>
                                 <li><a href='#'></a>Trapsoul</li>
@@ -52,7 +52,7 @@ export default function Footer() {
                 </div>
                 <div className='accordion-item'>
                     <div onClick={() => {toggleOpen('artist-content')}} className='accordion-header'><p className='all-caps'>Artist</p><ArrowDown/></div>
-                    <nav id='artist-content' className="accordion-content nav-text">
+                    <nav id='artist-content' className="accordion-content small-body">
                         <ul>
                             <li><a href='#'></a>Brent Faiyaz</li>
                             <li><a href='#'></a>Drake</li>
@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
                 <div className='accordion-item'>
                     <div onClick={() => {toggleOpen('record-content')}} className='accordion-header'><p className='all-caps'>Record</p><ArrowDown/></div>
-                    <nav id='record-content' className="accordion-content nav-text">
+                    <nav id='record-content' className="accordion-content small-body">
                         <ul>
                             <li><a href='#'></a>What a Time</li>
                             <li><a href='#'></a>Coming Home</li>
