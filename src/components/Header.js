@@ -31,7 +31,7 @@ export default function Header() {
           // Animation for burguer menu
 
         line2.style.fill = 'white'
-        line2.style.transitionDuration = '1s'
+        line2.style.transitionDuration = '0.5s'
         line1.style.transitionDuration = '1s'
         line3.style.transitionDuration = '1s'
         line1.style.transform = 'translateY(50%)'
