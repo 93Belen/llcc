@@ -88,13 +88,19 @@
       }
     #carousel ul{
         position: relative;
-        left: 27vw;
+        left: 30vw;
     }
    
 }
 
 
 @media screen and (min-width: 1600px) {
+    #carousel ul{
+        left: 32vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
     #carousel ul{
         left: 35vw;
     }

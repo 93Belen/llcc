@@ -11,11 +11,11 @@ export default function CarouselElement() {
 
     const responsive = {
         big: {
-            breakpoint: { max: 8000, min: 1600 },
+            breakpoint: { max: 8000, min: 1800 },
             items: 3
           },
         desktop: {
-          breakpoint: { max: 1600, min: 1200 },
+          breakpoint: { max: 1800, min: 1200 },
           items: 2
         },
         tablet: {
