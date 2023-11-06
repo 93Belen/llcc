@@ -29,9 +29,9 @@ function App() {
           <div id='brent-content'>
             <h3>Brent Faiyaz, So Far Gone</h3>
             <p className='regular-body'>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career.  On January 19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and received with positive reviews from music critics.  On January 26, 2017, Sonder released their debut EP Into.</p>
-            <button id='desktop-brent-button' className='button regular-body'>Lear More</button>
+            <button id='desktop-brent-button' className='button regular-body'>Learn More</button>
           </div>
-          <button id='mobile-brent-button' className='button regular-body'>Lear More</button>
+          <button id='mobile-brent-button' className='button regular-body'>Learn More</button>
         </section>
         <CarouselElement/>
         <Map/>
